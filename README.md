@@ -1,7 +1,9 @@
-ACM SIGPLAN Fortran Forum Article Template
-==========================================
+Fortran Package Manager's First Birthday
+========================================
 
-This repository provides a template for 
+This repository was created from the
+[ACM SIGPLAN Fortran Forum article template](https://github.com/fortran-lang/fortran-forum-article-template)
+which enables:
 
 1. Building an _ACM SIGPLAN Fortran Forum_ article in Portable Document Format (PDF).
 2. Automatically deploying the article PDF to a GitHub Pages web site.
@@ -36,16 +38,13 @@ Building the paper
 
 The article uses GitHub-flavored Markdown with embedded LaTeX commands for equations and figures and BibTeX citations for generating a bibliography.
 This repository employs a CI script to automatically generate a Portable Document Format (PDF) file from the all Markdown files matching the `doc/paper/part-*.md` glob expression.
-The CI script [.github/workflows/CI.yml](.github/workflows/CI.yml) deploys the resulting PDF file to a **public** GitHub Pages web site with a URL of the form [`https://username.github.io/project-name`](https://fortran-lang.github.io/fortran-forum-article-template/).
-To support this feature, a user must enable GitHub Pages for their fork of this repository.
-Users who prefer to prevent the public deployment of the PDF may do so by removing the `Prepare for Deployment` and `Deploy to GitHub Pages` blocks of code in the aforementioned CI script.
-We encourage those who are so inclined to make their PDF public to support open access to your work.
+The CI script [.github/workflows/CI.yml](.github/workflows/CI.yml) deploys the resulting PDF file to a **public** GitHub Pages [web site](https://everythingfunctional.github.io/fortran-forum-fpm-first-year/).
 
 ### Building a paper on yor own platform
 
 In a command-line shell on Linux, macOS, or Windows Subsystem for Linux, compile the PDF of the paper as follows:
 ```
-git clone git@github.com:fortran-lang/fortran-forum-article-template
+git clone git@github.com:everythingfunctional/fortran-forum-fpm-first-year.git
 cd fortran-forum-article-template
 make
 ```
@@ -64,7 +63,7 @@ Build and test the example code as follows:
 ```
 fpm test
 ```
-If the test(s) pass(es), replace the Fortran source in [src](src) with your code. 
+If the test(s) pass(es), replace the Fortran source in [src](src) with your code.
 
 Writing your article
 --------------------
