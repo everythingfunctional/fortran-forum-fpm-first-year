@@ -4,6 +4,7 @@ title: Fortran Package Manager's First Birthday
 firstpage: 1
 author:
   - Brad Richardson
+colorlinks: true
 ...
 
 It was about 1 year ago that I attended my first Fortran standards committee meeting,
