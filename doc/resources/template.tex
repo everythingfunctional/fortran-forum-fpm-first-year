@@ -8,6 +8,12 @@
 \usepackage{hyperref}
 \usepackage{graphicx}
 
+$if(colorlinks)$
+\PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
+$endif$
+
+\usepackage{xcolor}
+
 \hypersetup{
 $if(title-meta)$
   pdftitle={$title-meta$},
